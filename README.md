@@ -5,6 +5,3 @@ I upgraded and customized this webpage. The design and layout were influenced by
 ## Credits
 
 - **Original Inspiration:** [OlieWu's Tinawina Webpage](https://github.com/OlieWu/tinawina.git)
-
-## Acknowledgements
-The original Tinawina webpage can be found [here](https://github.com/OlieWu/tinawina.git).
