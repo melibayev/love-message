@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head> 
+    <body>
+        <div class="container">
+            <div class="box">
+                <div id="text">
+                    <h1 class="header_text">Do you Love me?</h1>
+                </div>
+                <div class="gif_container">
+                    <img src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="Cute animated illustration">
+                </div>
+                <div class = "buttons" id="button">
+                    <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+                    <button class="btn" id="noButton" onclick="moveButton()">No</button>
+                    <script>
+                        function nextPage() {
+                            window.location.href = "yes.html";
+                        }
+                        
+                        function moveButton() {
+                            var noButton = document.getElementById('noButton');
+                            noButton.textContent = 'Yes';
+                            noButton.onclick = nextPage; 
+                            
+                            var newNoButton = document.createElement('button');
+                            newNoButton.className = 'btn';
+                            newNoButton.textContent = 'No';
+                            newNoButton.onclick = moveButton;
+                            
+                            var emoji = document.createElement("div") 
+                            emoji.innerHTML = '🤨🤨';
+                            emoji.className = 'emoji'
+                            document.getElementById('text').prepend(emoji)
+                        }
+                    </script> 
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>
